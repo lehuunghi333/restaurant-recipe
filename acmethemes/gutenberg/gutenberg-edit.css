@@ -1,0 +1,92 @@
+.gutenberg__editor .wp-block-heading h1,
+.gutenberg__editor .wp-block-heading h1 a,
+.gutenberg__editor .wp-block-heading h2,
+.gutenberg__editor .wp-block-heading h2 a,
+.gutenberg__editor .wp-block-heading h3,
+.gutenberg__editor .wp-block-heading h3 a,
+.gutenberg__editor .wp-block-heading h4,
+.gutenberg__editor .wp-block-heading h4 a,
+.gutenberg__editor .wp-block-heading h5,
+.gutenberg__editor .wp-block-heading h5 a,
+.gutenberg__editor .wp-block-heading h6,
+.gutenberg__editor .wp-block-heading h6 a{
+    color: #000;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+.gutenberg__editor .wp-block-heading h1{
+    font-size: 36px;
+     font-weight: 600;
+}
+.gutenberg__editor .wp-block-heading h2{
+    font-size: 28px;
+
+}
+.gutenberg__editor .wp-block-heading h3{
+    font-size: 20px;   
+
+}
+.gutenberg__editor .wp-block-heading h4{
+    font-size: 16px;
+}
+.gutenberg__editor .wp-block-heading h5{
+     font-size: 14px;
+}
+.gutenberg__editor .wp-block-heading h6{
+    font-size: 12px;
+}
+.gutenberg__editor .editor-rich-text ul,
+.gutenberg__editor .editor-rich-text ol {
+    margin: 0 0 1.5em 3em;
+}
+.gutenberg__editor .editor-rich-text ul {
+    list-style: disc;
+}
+.gutenberg__editor .editor-rich-text ol {
+    list-style: decimal;
+}
+.gutenberg__editor dt {
+    font-weight: bold;
+}
+.gutenberg__editor dd {
+    margin: 0 1.5em 1.5em;
+}
+.gutenberg__editor blockquote:before,
+.gutenberg__editor blockquote:after,
+.gutenberg__editor q:before,
+.gutenberg__editor q:after {
+    content: "";
+}
+.gutenberg__editor blockquote,
+.gutenberg__editor q {
+    quotes: "" "";
+}
+.gutenberg__editor address {
+    margin: 0 0 1.5em;
+}
+.edit-post-visual-editor, 
+.edit-post-visual-editor p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+
+.edit-post-visual-editor .editor-post-title__block,
+.edit-post-visual-editor .editor-block-list__block{
+    max-width: 800px
+}
+
+/* Main column width */
+body.gutenberg-editor-page #wpcontent .editor-post-title__block,
+body.gutenberg-editor-page #wpcontent .editor-default-block-appender,
+body.gutenberg-editor-page #wpcontent .editor-block-list__block {
+    max-width: 800px;
+}
+.editor-post-title__block .editor-post-title__input{
+      font-family: 'Open Sans', sans-serif;
+}
+
+body.gutenberg-editor-page #wpcontent .editor-block-list__block[data-align="full"] {
+    max-width: none !important;
+}
