@@ -12,7 +12,7 @@ global $restaurant_recipe_customizer_all_values;
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('init-animate'); ?>>
-	<div class="content-wrapper">
+	<div class="content-wrapper single-post">
 		<?php
 		$restaurant_recipe_hide_single_featured_image = restaurant_recipe_featured_image_display( );
 		if( has_post_thumbnail() && 'disable' != $restaurant_recipe_hide_single_featured_image ):

@@ -15,7 +15,7 @@ if ( ! function_exists( 'restaurant_recipe_cats_lists' ) ) :
 			/* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list( esc_html__( ', ', 'restaurant-recipe' ) );
 			if ( $categories_list && restaurant_recipe_categorized_blog() ) {
-				printf( '<span class="cat-links">%1$s</span>', $categories_list ); // WPCS: XSS OK.
+				// printf( '<span class="cat-links">%1$s</span>', $categories_list ); // WPCS: XSS OK.
 			}
 		}
 	}
@@ -55,12 +55,12 @@ function restaurant_recipe_entry_footer( $show_date = 1, $show_author = 1, $show
 
 		}
 
-		if( 1 == $show_author ){
-			printf(
-				'%s',
-				'<span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-			);
-		}
+		// if( 1 == $show_author ){
+		// 	printf(
+		// 		'%s',
+		// 		'<span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		// 	);
+		// }
 		if( 1 == $show_tag ){
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html__( ', ', 'restaurant-recipe' ) );
@@ -70,13 +70,13 @@ function restaurant_recipe_entry_footer( $show_date = 1, $show_author = 1, $show
 		}
 	}
 
-	if( 1 == $show_comment ){
-		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link"><i class="fa fa-comment-o"></i>';
-			comments_popup_link( esc_html__( 'Leave a comment', 'restaurant-recipe' ), esc_html__( '1 Comment', 'restaurant-recipe' ), esc_html__( '% Comments', 'restaurant-recipe' ) );
-			echo '</span>';
-		}
-	}
+	// if( 1 == $show_comment ){
+	// 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+	// 		echo '<span class="comments-link"><i class="fa fa-comment-o"></i>';
+	// 		comments_popup_link( esc_html__( 'Leave a comment', 'restaurant-recipe' ), esc_html__( '1 Comment', 'restaurant-recipe' ), esc_html__( '% Comments', 'restaurant-recipe' ) );
+	// 		echo '</span>';
+	// 	}
+	// }
 
 	if ( get_edit_post_link() ) :
 		edit_post_link(

@@ -361,11 +361,11 @@ if ( !function_exists('restaurant_recipe_get_default_theme_options') ) :
 	        'restaurant-recipe-hide-front-page-content' => '',
 	        'restaurant-recipe-hide-front-page-header'  => '',
 
-	        'restaurant-recipe-primary-color'          => '#542727',
+	        'restaurant-recipe-primary-color'          => '#c38346',
             'restaurant-recipe-header-top-bg-color'    => '#1b1b1b',
             'restaurant-recipe-footer-bg-color'        => '#1b1b1b',
             'restaurant-recipe-footer-bottom-bg-color' => '#2d2d2d',
-            'restaurant-recipe-link-color'             => '#e83d47',
+            'restaurant-recipe-link-color'             => '#c38346',
             'restaurant-recipe-link-hover-color'       => '#d2333c',
 
 	        /*woocommerce*/

@@ -13,7 +13,7 @@ $no_blog_image = '';
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="content-wrapper">
+	<div class="content-wrapper all-post">
         <?php
         $thumbnail = $restaurant_recipe_customizer_all_values['restaurant-recipe-blog-archive-img-size'];
         if( has_post_thumbnail() && 'disable' != $thumbnail):
@@ -66,10 +66,13 @@ $no_blog_image = '';
 		            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'restaurant-recipe' ),
 		            'after'  => '</div>',
 	            ) );
-            else :
-                the_excerpt();
-            endif;
-			?>
+						else : ?>
+						<p>
+							<?php
+							echo wp_trim_words( get_the_excerpt(), 25 );
+						endif;
+						?>
+						</p>
 		</div><!-- .entry-content -->
 	</div>
 </article><!-- #post-## -->

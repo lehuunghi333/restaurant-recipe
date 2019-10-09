@@ -36,28 +36,29 @@ jQuery(document).ready(function($){
             var prevArrow =at_featured_img_slider.closest('.widget').find('.at-action-wrapper > .prev');
             var nextArrow =at_featured_img_slider.closest('.widget').find('.at-action-wrapper > .next');
             at_featured_img_slider.css('visibility', 'visible').slick({
-                slidesToShow: slidesToShow,
-                slidesToScroll: slidesToScroll,
+                slidesToShow: 3,
+                slidesToScroll: 1,
                 autoplay: true,
-                speed: 700,
+                speed: 1000,
+                autoplaySpeed: 10000,
                 adaptiveHeight: true,
-                cssEase: 'linear',
+                cssEase: 'ease-in-out',
                 arrows: true,
                 prevArrow: prevArrow,
                 nextArrow: nextArrow,
                 responsive: [
                     {
-                        breakpoint: 768,
+                        breakpoint: 1024,
                         settings: {
-                            slidesToShow: ( slidesToShow > 1 ? slidesToShow - 1 : slidesToShow ),
-                            slidesToScroll: ( slidesToScroll > 1 ? slidesToScroll - 1 : slidesToScroll )
+                            slidesToShow: 2,
+                            slidesToScroll: 1
                         }
                     },
                     {
-                        breakpoint: 480,
+                        breakpoint: 640,
                         settings: {
-                            slidesToShow: ( slidesToShow > 2 ? slidesToShow - 2 : slidesToShow ),
-                            slidesToScroll: ( slidesToScroll > 2 ? slidesToScroll - 2 : slidesToScroll )
+                            slidesToShow: 1,
+                            slidesToScroll: 1
                         }
                     }
                 ]
